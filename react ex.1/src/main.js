@@ -10,14 +10,13 @@ class Like extends React.Component {
   }
 
  render() {
-  const {liked} = this.state;
-  return (
-    <div onClick={() =>{this.setState({liked: !liked})},
-    `${liked ? 'liked' : 'unliked'}`}>
-      
-    </div>
-  );
-}
+    const { liked } = this.state;
+    return React.createElement(
+      "div",
+      { onClick: () => this.setState({ liked: !liked }) },
+      `${liked ? "liked" : "unliked"}`
+    );
+  }
 }
 
 const domContainer = document.querySelector('#like');
