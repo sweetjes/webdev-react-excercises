@@ -1,0 +1,124 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.widgets-container {
+  display: flex;
+}
+
+.main {
+  margin-top: 5vmax;
+  margin: 2vmax;
+  margin-top: 10vmax;
+  width: 25vw;
+  height: 20vmax;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 1vmax #ddd;
+  border-radius: 2vmax;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 2vmax;
+  border-top-right-radius: 2vmax;
+  width: 100%;
+  height: 7vmax;
+  box-shadow: 0 0 1vmax #ddd;
+  position: relative;
+}
+
+.header__icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15%;
+  height: 12vh;
+  position: absolute;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.sunny .header__icon {
+  background-image: url('../images/sun.png');
+}
+
+.rainy .header__icon {
+  background-image: url('../images/rainingCloud.png');
+}
+
+.thunderstorm .header__icon {
+  background-image: url('../images/thunderstorm.png');
+}
+
+.cloudy .header__icon {
+  background-image: url('../images/cloudy.png');
+}
+
+.sunny .header__icon:hover {
+  transform: scale(1.2);
+}
+
+.sunny {
+  background-color: #88BEFA;
+}
+
+.cloudy {
+  background-color: #E3E2E2;
+}
+
+.thunderstorm {
+  background-color: #474747;
+}
+
+.rainy {
+  background-color: #D3D3D3;
+}
+
+.snowy .header__icon {
+  background-image: url('../images/snowy.png');
+}
+
+.rainy .header__icon:hover {
+  transform: scale(1.2);
+  animation-duration: 0.6;
+}
+
+.thunderstorm .header__icon:hover {
+  transform: scale(1.2);
+  animation-duration: 1s;
+}
+
+.cloudy .header__icon:hover {
+  transform: scale(1.2);
+}
+
+.snowy .header__icon:hover {
+  transform: scale(1.2);
+}
+
+.content {
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  height: 25vmax;
+}
+
+.content__item {
+  width: 100%;
+  font-size: 1.5vmax;
+  text-align: center;
+}
+
+.content__item:hover {
+  transform: scale(1.1);
+}
+
+.content__item:first-child {
+  text-decoration: underline;
+}
